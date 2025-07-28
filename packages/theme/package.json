@@ -1,0 +1,17 @@
+{
+  "name": "@aibetter/ui-theme",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.13.1",
+  "description": "The theme of the UI component library specially adapted for AI programming.",
+  "author": "litingyes",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "theme",
+    "ai",
+    "coding",
+    "tailwindcss",
+    "color"
+  ]
+}
