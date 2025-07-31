@@ -5,4 +5,11 @@ export default antfu({
   vue: true,
   react: true,
   typescript: true,
+}, {
+  files: ['docs/**/*.vue'],
+  rules: {
+    'vue/component-name-in-template-casing': ['error', 'PascalCase', {
+      ignores: ['/^u-/'],
+    }],
+  },
 })

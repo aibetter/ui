@@ -2,11 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  nitro: {
+    moduleSideEffects: ['@aibetter/ui-components'],
+  },
 
-  modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/fonts'],
-  eslint: {
-    config: {
-      standalone: false,
-    },
+  modules: ['@nuxt/content', '@nuxt/fonts', 'nuxt-ssr-lit'],
+  ssrLit: {
+    litElementPrefix: 'u-',
   },
 })
