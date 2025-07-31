@@ -48,8 +48,8 @@
     "pcss",
     "postcss"
   ],
+  "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": [
-    "rolldown"
-  ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+    "tsdown"
+  ]
 }
