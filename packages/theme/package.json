@@ -13,5 +13,22 @@
     "coding",
     "tailwindcss",
     "color"
-  ]
+  ],
+  "exports": {
+    "./css": "./src/css/theme.css"
+  },
+  "scripts": {
+    "build:css": "jiti scripts/build.ts && eslint --fix ./src/css/theme.css"
+  },
+  "peerDependencies": {
+    "tailwindcss": "catalog:"
+  },
+  "dependencies": {
+    "es-toolkit": "catalog:",
+    "magic-color": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "rolldown": "catalog:"
+  }
 }
