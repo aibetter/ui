@@ -1,9 +1,9 @@
 {
-  "name": "@aibetter/ui-components",
+  "name": "@aibetter/ui-vue",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@10.13.1",
-  "description": "The components of the UI component library specially adapted for AI programming.",
+  "description": "The vue components of the UI component library specially adapted for AI programming.",
   "author": "litingyes",
   "license": "MIT",
   "keywords": [
@@ -23,13 +23,18 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "dev": "tsdown --watch",
     "build": "tsdown"
+  },
+  "peerDependencies": {
+    "vue": "catalog:"
   },
   "dependencies": {
     "@aibetter/ui-theme": "workspace:*",
-    "lit": "^3.3.1"
+    "unplugin-vue": "^7.0.0"
   },
   "devDependencies": {
-    "tsdown": "catalog:"
+    "tsdown": "catalog:",
+    "vue-tsc": "^3.0.4"
   }
 }

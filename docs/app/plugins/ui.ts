@@ -1,4 +1,5 @@
-import '@aibetter/ui-components'
+import { install } from '@aibetter/ui-vue'
 
-export default defineNuxtPlugin(() => {
+export default defineNuxtPlugin(({ vueApp }) => {
+  install(vueApp)
 })

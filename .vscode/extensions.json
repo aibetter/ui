@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "njzy.pnpm-catalog-lens-njzy",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "vue.volar"
   ]
 }

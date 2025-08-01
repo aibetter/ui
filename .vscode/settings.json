@@ -50,7 +50,10 @@
   ],
   "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": [
+    "esbuild",
     "nuxt",
-    "tsdown"
+    "rolldown",
+    "tsdown",
+    "unplugin"
   ]
 }
