@@ -15,7 +15,7 @@
     "vue"
   ],
   "scripts": {
-    "build:docs": "pnpm --filter @aibetter/ui-docs build",
+    "build:docs": "pnpm --filter @aibetter/ui-docs generate",
     "build": "pnpm --filter \"./packages/**\" build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
