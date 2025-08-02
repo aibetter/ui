@@ -15,7 +15,9 @@
     "color"
   ],
   "exports": {
-    "./css": "./src/css/theme.css"
+    ".": {
+      "style": "./src/css/index.css"
+    }
   },
   "scripts": {
     "build:css": "jiti scripts/build.ts && eslint --fix ./src/css/theme.css"

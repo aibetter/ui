@@ -1,2 +1,2 @@
-@import 'tailwindcss';
+@import '@aibetter/ui-theme';
 @source '../../../node_modules/@aibetter/ui-vue';
