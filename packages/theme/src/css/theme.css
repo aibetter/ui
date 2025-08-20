@@ -105,6 +105,7 @@
 
   --color-background: #fff;
   --color-foreground: #000;
+  --color-foreground-reverse: #fff;
 
   --color-text-primary: #000;
   --color-text-secondary: oklch(21% 0.034 264.665);
