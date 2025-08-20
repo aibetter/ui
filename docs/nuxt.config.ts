@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   devServer: {
-    port: 6002,
+    port: 9002,
   },
 
   modules: ['@nuxt/content', '@nuxt/fonts'],
