@@ -1,3 +1,3 @@
 # ui
 
-The UI component librarie specially adapted for AI programming
+The UI component library specially adapted for AI programming
