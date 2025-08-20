@@ -23,18 +23,25 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "tsdown --watch",
-    "build": "tsdown"
+    "dev": "vite build --watch",
+    "build": "vite build"
   },
   "peerDependencies": {
     "vue": "catalog:"
   },
   "dependencies": {
-    "@aibetter/ui-theme": "workspace:*",
-    "unplugin-vue": "^7.0.0"
+    "class-variance-authority": "^0.7.1",
+    "es-toolkit": "catalog:",
+    "tailwind-variants": "^2.1.0",
+    "unplugin-external": "0.1.0-beta.3",
+    "vite": "^7.0.6",
+    "vite-plugin-dts": "^4.5.4",
+    "zod": "^4.0.14"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
     "tsdown": "catalog:",
+    "unplugin-vue": "^7.0.0",
     "vue-tsc": "^3.0.4"
   }
 }
