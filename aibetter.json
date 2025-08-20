@@ -1,0 +1,14 @@
+{
+  "cursor": {
+    "rules": {
+      "constitution": true,
+      "roles": {
+        "R&D Engineer": true
+      },
+      "languages": {
+        "TypeScript": true,
+        "vue": true
+      }
+    }
+  }
+}
