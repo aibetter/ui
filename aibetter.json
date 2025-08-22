@@ -7,7 +7,7 @@
       },
       "languages": {
         "TypeScript": true,
-        "vue": true
+        "Vue": true
       }
     }
   }

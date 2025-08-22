@@ -1,3 +1,4 @@
 @import '@aibetter/ui-theme';
+@plugin "@tailwindcss/typography";
 @plugin "@iconify/tailwind4";
 @source '../../../node_modules/@aibetter/ui-vue';

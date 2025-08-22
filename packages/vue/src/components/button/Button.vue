@@ -32,6 +32,6 @@ const ui = computed(() => createUI(initUI, props.ui)(props))
 
 <template>
   <button :class="ui.root()">
-    Click me
+    <slot />
   </button>
 </template>
