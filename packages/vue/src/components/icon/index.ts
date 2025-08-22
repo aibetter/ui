@@ -1,5 +1,6 @@
+import type { Props } from './props'
 import Icon from './Icon.vue'
-import { props, Props } from './props'
+import { props } from './props'
 
 export {
   Icon as UIcon,
