@@ -11,7 +11,7 @@ export const initUI: TVOptions = {
         root: 'h-6 text-sm px-1.5 rounded-sm',
       },
       md: {
-        root: 'h-8 text-root px-3 py-1 rounded-md',
+        root: 'h-8 text-base px-3 py-1 rounded-md',
       },
       lg: {
         root: 'h-10 text-xl px-4 rounded-lg',
