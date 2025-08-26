@@ -2,14 +2,14 @@
 import type { ZodObject } from 'zod'
 
 const props = defineProps<{
-  name: string
+  componentName: string
 }>()
 
 const module = await import(
-  `../../../packages/vue/src/components/${props.name.toLocaleLowerCase()}/index.ts`
+  `../../../packages/vue/src/components/${props.componentName.toLocaleLowerCase()}/index.ts`
 )
 
-const propsSchema = module[`U${props.name}PropsSchema`] as ZodObject
+const propsSchema = module[`U${props.componentName}PropsSchema`] as ZodObject
 
 const propsStruct = getPropsStruct(propsSchema)
 </script>

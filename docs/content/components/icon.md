@@ -2,11 +2,11 @@
 
 ## Playground
 
-::component-preview{name="Icon"}
+::component-preview{component-name="Icon" name="icon-[hugeicons--deepseek]"}
 Click
 ::
 
 ## Props
 
-::component-props{name="Icon"}
+::component-props{component-name="Icon"}
 ::
