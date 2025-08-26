@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   devServer: {
     port: 9002,
   },
+  watch: ['./../packages/vue/src/**/*.{ts,vue}'],
 
   modules: ['@nuxt/content', '@nuxt/fonts'],
 })

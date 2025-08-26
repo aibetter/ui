@@ -23,6 +23,11 @@ const { data: page } = await useAsyncData(route.path, () => {
               Button
             </NuxtLink>
           </li>
+          <li>
+            <NuxtLink to="/components/icon">
+              Icon
+            </NuxtLink>
+          </li>
         </ul>
       </menu>
       <article class="flex-1 prose">
