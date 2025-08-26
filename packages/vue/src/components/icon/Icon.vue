@@ -5,7 +5,14 @@ import { computed } from 'vue'
 import { createUI } from '../../utils/ui'
 import { initUI } from './style'
 
-const props = defineProps<Props>()
+defineOptions({
+  name: 'UIcon',
+})
+
+const props = withDefaults(defineProps<Props>(), {
+  name: '',
+  size: 'md',
+})
 
 const ui = computed(() => createUI(initUI, props.ui)(props))
 
@@ -22,5 +29,5 @@ const customSize = computed(() => {
 </script>
 
 <template>
-  <i :class="[ui, name]" :style="customSize" />
+  <i :class="[name, ui.root()]" :style="customSize" />
 </template>

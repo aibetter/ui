@@ -14,7 +14,7 @@ const model = defineModel<unknown>()
       {{ struct.key }}
     </div>
     <div class="px-1">
-      <select v-if="struct.type === 'enum'" v-model="model">
+      <select v-if="struct.type === 'enum' || (Array.isArray(struct.type) && struct.type.includes('enum'))" v-model="model">
         <option
           v-for="value in struct.enumValues"
           :key="value as PropertyKey"

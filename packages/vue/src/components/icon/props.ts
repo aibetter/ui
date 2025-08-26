@@ -3,7 +3,7 @@ import { z } from 'zod'
 
 export const props = z.object({
   name: z.string(),
-  size: z.union([z.enum(['sm', 'md', 'lg']), z.number()]).optional(),
+  size: z.union([z.enum(['sm', 'md', 'lg']), z.number()]).default('md'),
 })
 
 export interface Props {
