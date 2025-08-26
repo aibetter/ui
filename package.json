@@ -19,8 +19,8 @@
     "build": "pnpm --filter \"./packages/**\" build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "commit": "changeset",
-    "version": "changeset version",
+    "bump": "changeset",
+    "release": "changeset version",
     "prepare": "husky && aib sync"
   },
   "devDependencies": {
