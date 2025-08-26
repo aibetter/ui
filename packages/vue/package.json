@@ -30,6 +30,8 @@
     "vue": "catalog:"
   },
   "dependencies": {
+    "@floating-ui/vue": "^1.1.9",
+    "@vueuse/core": "catalog:",
     "class-variance-authority": "^0.7.1",
     "es-toolkit": "catalog:",
     "tailwind-variants": "^2.1.0",

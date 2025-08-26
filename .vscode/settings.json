@@ -54,6 +54,7 @@
     "nuxt",
     "rolldown",
     "tsdown",
-    "unplugin"
+    "unplugin",
+    "vueuse"
   ]
 }
