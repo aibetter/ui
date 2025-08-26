@@ -29,13 +29,23 @@ const props = withDefaults(defineProps<
 })
 
 const ui = computed(() => createUI(initUI, props.ui)(props))
+
+const iconSize = computed(() => {
+  if (props.size === 'sm') {
+    return 20
+  }
+  if (props.size === 'md') {
+    return 24
+  }
+  return 28
+})
 </script>
 
 <template>
   <button :class="ui.root()">
-    <UIcon v-if="loading" :name="loadingIcon" />
+    <UIcon v-if="loading" :name="loadingIcon" :size="iconSize" />
     <UIcon
-      v-else-if="icon" :name="icon" :class="ui.icon()"
+      v-else-if="icon" :name="icon" :class="ui.icon()" :size="iconSize"
     />
     <slot />
   </button>

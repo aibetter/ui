@@ -2,7 +2,7 @@ import type { TVOptions } from '../../utils/ui'
 
 export const initUI: TVOptions = {
   slots: {
-    root: 'justify-center items-center gap-2',
+    root: 'justify-center items-center gap-1',
     icon: '',
   },
   variants: {
