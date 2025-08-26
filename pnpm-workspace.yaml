@@ -15,6 +15,7 @@ onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - better-sqlite3
   - esbuild
+  - vue-demi
 
 publicHoistPattern:
   - rolldown-plugin-dts
