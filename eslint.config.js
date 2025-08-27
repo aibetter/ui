@@ -25,4 +25,10 @@ export default antfu(
       }],
     },
   },
+  {
+    files: ['packages/vue/src/**/*.ts'],
+    rules: {
+      'react-hooks-extra/no-unnecessary-use-prefix': 'off',
+    },
+  },
 )
