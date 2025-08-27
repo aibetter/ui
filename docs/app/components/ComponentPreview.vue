@@ -34,7 +34,7 @@ const componentProps = ref<Record<string, any>>({
       />
     </div>
     <hr class="!my-2 bg-border">
-    <div class="flex justify-center items-center p-4">
+    <div class="flex justify-center items-center p-4 not-prose">
       <component :is="UComponent" v-bind="componentProps">
         <slot />
       </component>

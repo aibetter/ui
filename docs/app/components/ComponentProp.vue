@@ -32,6 +32,7 @@ const model = defineModel<unknown>()
         </option>
       </select>
       <input v-else-if="struct.type === 'string'" v-model="model">
+      <input v-else-if="struct.type === 'number'" v-model.number="model">
     </div>
   </div>
 </template>
