@@ -21,6 +21,7 @@ const props = withDefaults(defineProps<
   options: () => [],
   placement: 'bottom-start',
   offset: 8,
+  size: 'md',
   placeholder: 'Select',
   ui: () => ({}),
 })
