@@ -65,28 +65,6 @@ export const initUI: TVOptions = {
         root: 'text-primary-500 hover:bg-primary-100 active:bg-primary-200',
       },
     },
-    // Secondary variants
-    {
-      color: 'secondary',
-      variant: 'solid',
-      class: {
-        root: 'text-foreground-reverse bg-secondary-600 hover:bg-secondary-700 active:bg-secondary-800',
-      },
-    },
-    {
-      color: 'secondary',
-      variant: 'outline',
-      class: {
-        root: 'text-secondary-500 border border-solid border-secondary-500 hover:bg-secondary-50 active:bg-secondary-100',
-      },
-    },
-    {
-      color: 'secondary',
-      variant: 'ghost',
-      class: {
-        root: 'text-secondary-500 hover:bg-secondary-100 active:bg-secondary-200',
-      },
-    },
     // Accent variants
     {
       color: 'accent',

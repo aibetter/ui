@@ -4,7 +4,6 @@ export const props = z.object({
   color: z.enum(
     [
       'primary',
-      'secondary',
       'accent',
       'info',
       'success',
@@ -29,15 +28,13 @@ export const props = z.object({
 })
 
 export interface Props {
-  color?: 'primary' | 'secondary'
-  variant?: 'solid' | 'ghost'
+  color?: 'primary' | 'accent' | 'info' | 'success' | 'warning' | 'error'
+  variant?: 'solid' | 'outline' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
-  block?: boolean
   icon?: string
   iconReverse?: boolean
   loading?: boolean
   loadingIcon?: string
-  to?: string
-  target?: '_self' | '_blank' | '_parent' | '_top'
   disabled?: boolean
+  block?: boolean
 }
