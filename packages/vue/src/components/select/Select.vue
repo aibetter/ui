@@ -2,7 +2,7 @@
 import type { TVOptions } from '../../utils/ui'
 import type { Props } from './props'
 import { flip, offset, shift, useFloating } from '@floating-ui/vue'
-import { useElementBounding, useResizeObserver } from '@vueuse/core'
+import { onClickOutside, useElementBounding, useResizeObserver } from '@vueuse/core'
 import { computed, ref, useTemplateRef } from 'vue'
 import { useZIndex } from '../../composables/useZIndex'
 import { createUI } from '../../utils/ui'
@@ -73,6 +73,12 @@ function onClickOption(option: Required<Props>['options'][number]) {
   model.value = option.value
   close()
 }
+
+onClickOutside(referenceRef, () => {
+  close()
+}, {
+  ignore: [floatingRef],
+})
 </script>
 
 <template>
