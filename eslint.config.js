@@ -31,4 +31,10 @@ export default antfu(
       'react-hooks-extra/no-unnecessary-use-prefix': 'off',
     },
   },
+  {
+    files: ['docs/content/**/*.md'],
+    rules: {
+      'format/prettier': 'off',
+    },
+  },
 )
