@@ -4,7 +4,7 @@ export const initUI: TVOptions = {
   slots: {
     root: 'cursor-pointer w-32 flex items-center gap-1 border border-solid border-border rounded-md',
     placeholder: 'text-text-muted',
-    floating: 'bg-background rounded-md shadow-sm border border-solid border-border',
+    floating: 'min-w-32 bg-background rounded-md shadow-sm border border-solid border-border',
     option: 'cursor-pointer rounded-md px-2 flex items-center gap-1 transition-colors hover:bg-secondary-100',
   },
   variants: {
