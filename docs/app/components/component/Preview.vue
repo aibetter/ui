@@ -33,7 +33,7 @@ const componentProps = ref<Record<string, any>>({
         :struct="prop"
       />
     </div>
-    <hr class="!my-2 bg-border">
+    <hr class="!my-2 border-border">
     <div
       class="flex justify-center items-center p-4"
     >
