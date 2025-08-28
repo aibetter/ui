@@ -7,7 +7,7 @@ const props = defineProps<{
 }>()
 
 const module = await import(
-  `../../../packages/vue/src/components/${props.componentName.toLocaleLowerCase()}/index.ts`
+  `../../../../packages/vue/src/components/${props.componentName.toLocaleLowerCase()}/index.ts`
 )
 
 const UComponent = module[`U${props.componentName}`] as Component

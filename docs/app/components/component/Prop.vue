@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import type { PropStruct } from '../utils/component'
 import { USelect } from '@vue-ui'
 
 defineProps<{
