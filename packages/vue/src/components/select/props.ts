@@ -31,7 +31,7 @@ export const props = z.object({
 export interface Props {
   options?: Array<{
     label: string
-    value: PropertyKey
+    value: unknown
   }>
   placement?: Placement
   offset?: number

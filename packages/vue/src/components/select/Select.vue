@@ -102,7 +102,7 @@ onClickOutside(referenceRef, () => {
     <ul>
       <li
         v-for="option in options"
-        :key="option.value"
+        :key="String(option.value)"
         :class="ui.option()"
         @click="onClickOption(option)"
       >
