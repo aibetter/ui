@@ -24,7 +24,7 @@ const componentProps = ref<Record<string, any>>({
 </script>
 
 <template>
-  <div class="border border-solid border-border rounded-xl">
+  <div class="border border-solid border-border rounded-xl not-prose">
     <div class="flex items-center flex-wrap gap-2 p-4">
       <ComponentProp
         v-for="prop in propsStruct"
@@ -34,7 +34,9 @@ const componentProps = ref<Record<string, any>>({
       />
     </div>
     <hr class="!my-2 bg-border">
-    <div class="flex justify-center items-center p-4 not-prose">
+    <div
+      class="flex justify-center items-center p-4"
+    >
       <component :is="UComponent" v-bind="componentProps">
         <slot />
       </component>

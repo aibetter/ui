@@ -1,4 +1,9 @@
 {
+  "compilerOptions": {
+    "paths": {
+      "@vue-ui": ["../packages/vue/src/index.ts"]
+    }
+  },
   "references": [
     {
       "path": "./.nuxt/tsconfig.app.json"
