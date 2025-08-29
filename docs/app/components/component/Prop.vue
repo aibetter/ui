@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { USelect } from '@vue-ui'
+import { UInput, USelect } from '@vue-ui'
 
 defineProps<{
   struct: PropStruct
@@ -21,7 +21,7 @@ const model = defineModel<unknown>()
         size="sm"
         :ui="{
           slots: {
-            root: 'border-none',
+            root: '!border-none',
           },
         }"
       />
@@ -30,9 +30,32 @@ const model = defineModel<unknown>()
         v-model="model"
         :options="[{ label: 'true', value: true }, { label: 'false', value: false }]"
         size="sm"
+        :ui="{
+          slots: {
+            root: '!border-none',
+          },
+        }"
       />
-      <input v-else-if="struct.type === 'string'" v-model="model">
-      <input v-else-if="struct.type === 'number'" v-model.number="model">
+      <UInput
+        v-else-if="struct.type === 'string'"
+        v-model="model as string"
+        size="sm"
+        :ui="{
+          slots: {
+            root: '!border-none',
+          },
+        }"
+      />
+      <UInput
+        v-else-if="struct.type === 'number'"
+        v-model.number="model as number"
+        size="sm"
+        :ui="{
+          slots: {
+            root: '!border-none',
+          },
+        }"
+      />
     </div>
   </div>
 </template>
