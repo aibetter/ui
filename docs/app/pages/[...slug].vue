@@ -29,6 +29,11 @@ const { data: page } = await useAsyncData(route.path, () => {
             </NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/components/input">
+              Input
+            </NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/components/select">
               Select
             </NuxtLink>
