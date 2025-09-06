@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { UButton } from '@vue-ui'
+
 const route = useRoute()
 
 const { data: page } = await useAsyncData(route.path, () => {
@@ -13,6 +15,18 @@ const { data: page } = await useAsyncData(route.path, () => {
         <NuxtLink to="/" class="text-2xl font-bold">
           UI
         </NuxtLink>
+      </div>
+      <div>
+        <UButton
+          icon="icon-[mdi--github]"
+          variant="ghost"
+          @click="navigateTo('https://github.com/aibetter/ui.git', {
+            external: true,
+            open: {
+              target: '_blank',
+            },
+          })"
+        />
       </div>
     </header>
     <main class="flex">
