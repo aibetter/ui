@@ -2,19 +2,22 @@ import type { TVOptions } from '../../utils/ui'
 
 export const initUI: TVOptions = {
   slots: {
-    root: 'justify-center items-center gap-1',
+    root: 'inline-flex justify-center items-center gap-1',
     icon: '',
   },
   variants: {
     size: {
       sm: {
-        root: 'h-6 text-sm px-1.5 rounded-sm',
+        root: 'h-6 text-sm rounded-sm',
+        icon: '!text-xl',
       },
       md: {
-        root: 'h-8 text-base px-3 py-1 rounded-md',
+        root: 'h-8 text-base rounded-md',
+        icon: '!text-2xl',
       },
       lg: {
-        root: 'h-10 text-xl px-4 rounded-lg',
+        root: 'h-10 text-xl rounded-lg',
+        icon: '!text-3xl',
       },
     },
     iconReverse: {
@@ -43,6 +46,49 @@ export const initUI: TVOptions = {
     },
   },
   compoundVariants: [
+    // size
+    {
+      size: 'sm',
+      iconOnly: false,
+      class: {
+        root: 'px-1.5 py-0',
+      },
+    },
+    {
+      size: 'sm',
+      iconOnly: true,
+      class: {
+        root: 'w-6 p-0',
+      },
+    },
+    {
+      size: 'md',
+      iconOnly: false,
+      class: {
+        root: 'px-3 py-1',
+      },
+    },
+    {
+      size: 'md',
+      iconOnly: true,
+      class: {
+        root: 'w-8 p-0',
+      },
+    },
+    {
+      size: 'lg',
+      iconOnly: false,
+      class: {
+        root: 'px-4 py-0',
+      },
+    },
+    {
+      size: 'lg',
+      iconOnly: true,
+      class: {
+        root: 'w-10 p-0',
+      },
+    },
     // Primary variants
     {
       color: 'primary',
@@ -180,6 +226,7 @@ export const initUI: TVOptions = {
     color: 'primary',
     variant: 'solid',
     size: 'md',
+    iconOnly: false,
     block: false,
   },
 }

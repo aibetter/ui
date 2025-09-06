@@ -28,24 +28,22 @@ const props = withDefaults(defineProps<
   ui: () => ({}),
 })
 
-const ui = computed(() => createUI(initUI, props.ui)(props))
+const slots = defineSlots<{
+  default?: () => void
+}>()
+const iconOnly = computed(() => !slots.default && !!props.icon)
 
-const iconSize = computed(() => {
-  if (props.size === 'sm') {
-    return 20
-  }
-  if (props.size === 'md') {
-    return 24
-  }
-  return 28
-})
+const ui = computed(() => createUI(initUI, props.ui)({
+  ...props,
+  iconOnly: iconOnly.value,
+}))
 </script>
 
 <template>
   <button :class="ui.root()">
-    <UIcon v-if="loading" :name="loadingIcon" :size="iconSize" />
+    <UIcon v-if="loading" :name="loadingIcon" :class="ui.icon()" />
     <UIcon
-      v-else-if="icon" :name="icon" :class="ui.icon()" :size="iconSize"
+      v-else-if="icon" :name="icon" :class="ui.icon()"
     />
     <slot />
   </button>

@@ -17,4 +17,7 @@ export const initUI: TVOptions = {
       },
     },
   },
+  defaultVariants: {
+    size: 'md',
+  },
 }
