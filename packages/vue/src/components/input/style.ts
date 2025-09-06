@@ -2,7 +2,7 @@ import type { TVOptions } from '../../utils/ui'
 
 export const initUI: TVOptions = {
   slots: {
-    root: 'inline-flex items-center gap-1 border border-solid border-border',
+    root: 'inline-flex items-center gap-1 border border-solid border-border transition-colors focus-within:border-primary-500',
     input: 'focus:outline-none',
   },
   variants: {
