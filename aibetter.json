@@ -3,7 +3,8 @@
     "rules": {
       "constitution": true,
       "roles": {
-        "R&D Engineer": true
+        "R&D Engineer": true,
+        "Translator": true
       },
       "languages": {
         "TypeScript": true,

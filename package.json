@@ -2,7 +2,7 @@
   "name": "ui",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.15.1",
   "description": "The UI component library specially adapted for AI programming.",
   "author": "litingyes",
   "license": "MIT",

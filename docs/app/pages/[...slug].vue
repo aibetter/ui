@@ -10,10 +10,11 @@ const { data: page } = await useAsyncData(route.path, () => {
 
 <template>
   <div>
-    <header class="h-16 px-4 flex items-center justify-between">
+    <header class="h-14 px-4 flex items-center justify-between">
       <div>
-        <NuxtLink to="/" class="text-2xl font-bold">
-          UI
+        <NuxtLink to="/" class="flex items-center gap-2">
+          <NuxtImg src="/logo.svg" alt="AI Better UI" class="size-8" />
+          <span class="text-2xl font-bold">UI</span>
         </NuxtLink>
       </div>
       <div>
@@ -29,35 +30,48 @@ const { data: page } = await useAsyncData(route.path, () => {
         />
       </div>
     </header>
-    <main class="flex">
-      <menu class="w-48 px-4">
+    <main class="flex h-[calc(100vh-3.5rem)]">
+      <menu class="w-48 h-full px-4 overflow-auto">
         <ul>
           <li>
-            <NuxtLink to="/components/button">
+            <NuxtLink
+              class="block px-3 py-1 rounded-md transition-colors hover:bg-primary-50"
+              to="/components/button"
+            >
               Button
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/components/icon">
+            <NuxtLink
+              class="block px-3 py-1 rounded-md transition-colors hover:bg-primary-50"
+              to="/components/icon"
+            >
               Icon
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/components/input">
+            <NuxtLink
+              class="block px-3 py-1 rounded-md transition-colors hover:bg-primary-50"
+              to="/components/input"
+            >
               Input
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/components/select">
+            <NuxtLink
+              class="block px-3 py-1 rounded-md transition-colors hover:bg-primary-50"
+              to="/components/select"
+            >
               Select
             </NuxtLink>
           </li>
         </ul>
       </menu>
-      <article class="flex-1 prose">
-        <ContentRenderer v-if="page" :value="page" />
-      </article>
+      <div class="flex-1 h-full overflow-auto">
+        <article class=" prose h-full">
+          <ContentRenderer v-if="page" :value="page" />
+        </article>
+      </div>
     </main>
-    <footer><!-- ... --></footer>
   </div>
 </template>
