@@ -2,6 +2,7 @@
   "name": "@aibetter/ui-theme",
   "type": "module",
   "version": "0.0.0",
+  "private": false,
   "packageManager": "pnpm@10.13.1",
   "description": "The theme of the UI component library specially adapted for AI programming.",
   "author": "litingyes",
@@ -15,12 +16,11 @@
     "color"
   ],
   "exports": {
-    ".": {
-      "style": "./src/css/index.css"
-    }
+    ".": "./src/css/index.css",
+    "./theme.css": "./src/css/theme.css"
   },
   "scripts": {
-    "build:css": "jiti scripts/build.ts && eslint --fix ./src/css/theme.css"
+    "build": "jiti scripts/build.ts"
   },
   "peerDependencies": {
     "tailwindcss": "catalog:"

@@ -33,5 +33,3 @@ export function resolveThemeOptions(options?: Partial<ThemeOptions>) {
 
   return resolvedOptions
 }
-
-// export function

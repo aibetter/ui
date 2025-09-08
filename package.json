@@ -17,11 +17,13 @@
   "scripts": {
     "build:docs": "pnpm --filter @aibetter/ui-docs generate",
     "build": "pnpm --filter \"./packages/**\" build",
+    "postbuild": "eslint --fix ./packages/theme/src/css/theme.css",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "bump": "changeset",
     "release": "changeset version",
-    "prepare": "husky && aib sync"
+    "prepare": "husky && aib sync",
+    "ci:publish": "pnpm publish -r --access=public"
   },
   "devDependencies": {
     "@aibetter/aib": "^0.1.3",
