@@ -23,7 +23,7 @@
     "bump": "changeset",
     "release": "changeset version",
     "prepare": "husky && aib sync",
-    "ci:publish": "pnpm publish -r --access=public"
+    "ci:publish": "pnpm build && changeset publish"
   },
   "devDependencies": {
     "@aibetter/aib": "^0.1.3",
