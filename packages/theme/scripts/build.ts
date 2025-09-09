@@ -26,6 +26,7 @@ const css = `@theme {
 
   --color-background: ${colors.white};
   --color-foreground: ${colors.black};
+  --color-foreground-reverse: ${colors.white};
 
   --color-text-primary: ${colors.black};
   --color-text-secondary: ${colors[themeOptions.secondary][900]};
