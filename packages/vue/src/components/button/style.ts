@@ -41,7 +41,7 @@ export const initUI: TVOptions = {
         root: 'cursor-not-allowed pointer-events-none opacity-75',
       },
       false: {
-        root: 'cursor-pointer transition-colors pointer-events-auto',
+        root: 'cursor-pointer transition-all pointer-events-auto active:scale-99',
       },
     },
   },
