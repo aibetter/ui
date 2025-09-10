@@ -44,6 +44,14 @@ const { data: page } = await useAsyncData(route.path, () => {
           <li>
             <NuxtLink
               class="block px-3 py-1 rounded-md transition-colors hover:bg-primary-50"
+              to="/components/checkbox"
+            >
+              Checkbox
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              class="block px-3 py-1 rounded-md transition-colors hover:bg-primary-50"
               to="/components/icon"
             >
               Icon
